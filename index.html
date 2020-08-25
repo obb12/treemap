@@ -1,0 +1,71 @@
+<style media="screen">
+  html, body{
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  font: 10px sans-serif;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tile-text{
+  cursor: default;
+}
+
+#title{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+#description{
+  padding-bottom: 1.5rem;
+}
+
+div.tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px Arial;
+  background: rgba(255, 255, 204, 0.95);
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.6);
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+#legend{
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+</style>
+<br>
+    <a href="?data=videogames">Video Game Data Set</a> |
+    <a href="?data=movies">Movies Data Set</a> |
+    <a href="?data=kickstarter">Kickstarter Data Set</a>
+    <h1 id='title'></h1>
+    <div id='description'></div>
+    <svg id='tree-map' width="960" height="570"></svg>
+    <svg id='legend' width="500"></svg>
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/topojson.v2.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js" charset="utf-8"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+      <script type="text/javascript" src="script.js">
+
+      </script>
